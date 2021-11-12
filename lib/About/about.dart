@@ -1,0 +1,89 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_smart_home_ui/widgets/Headings/widget_heading1.dart';
+import 'package:flutter_smart_home_ui/widgets/Headings/widget_heading2.dart';
+import 'package:flutter_smart_home_ui/widgets/widget_button.dart';
+import 'package:kf_drawer/kf_drawer.dart';
+
+class About extends KFDrawerContent {
+  @override
+  _AboutState createState() => _AboutState();
+}
+
+class _AboutState extends State<About> {
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Center(
+        child: Column(
+          children: <Widget>[
+            Row(
+              children: <Widget>[
+                ClipRRect(
+                  borderRadius: BorderRadius.all(Radius.circular(32.0)),
+                  child: Material(
+                    shadowColor: Colors.transparent,
+                    color: Colors.transparent,
+                    child: IconButton(
+                      icon: Icon(
+                        Icons.menu,
+                        color: Colors.black,
+                      ),
+                      onPressed: widget.onMenuPressed,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: <Widget>[
+                  Padding(padding: EdgeInsets.only(top:MediaQuery.of(context).size.height*0.1,left: 10,right: 10),
+                    child: Align(alignment: Alignment.centerLeft,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: <Widget>[
+                          Heading1("About"),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Container(height: 7,width: 90,color: Colors.amberAccent,),
+                          SizedBox(
+                            height: 30,
+                          ),
+                          Text("• Name: Kaleem Ullah Khan",style: TextStyle(color: Colors.grey),),
+                          Text("• Email: ABCD@gmail.com",style: TextStyle(color: Colors.grey),),
+                          Text("• Phone: 12345678901",style: TextStyle(color: Colors.grey),),
+                          Text("• Date of Birth: 23 February 1990",style: TextStyle(color: Colors.grey),),
+                          Text("• Address : Pakistan Peshawer",style: TextStyle(color: Colors.grey),),
+                          Text("• Nationality: Pakistan",style: TextStyle(color: Colors.grey),),
+
+                          SizedBox(height: 40,),
+
+                          Heading2("Professional Profile"),
+                          SizedBox(
+                            height: 30,
+                          ),
+                          Text("Flutter Developer",style: TextStyle(color: Colors.grey)),
+                          SizedBox(
+                            height: 30,
+                          ),
+                          Container(
+                            width: 400,
+                            decoration: BoxDecoration(border: Border.all(color: Colors.yellow,width: 3)),
+                            child: Button(title: "Download Resume as PDF",)
+                          )],
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
