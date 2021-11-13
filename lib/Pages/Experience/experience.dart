@@ -4,6 +4,7 @@ import 'package:flutter_smart_home_ui/widgets/Headings/widget_heading2.dart';
 import 'package:flutter_smart_home_ui/widgets/widget_icon_with_description.dart';
 import 'package:kf_drawer/kf_drawer.dart';
 
+// ignore: must_be_immutable
 class Experience extends KFDrawerContent {
   Experience({
     Key key,
@@ -53,21 +54,13 @@ class _ExperienceState extends State<Experience> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
                         Heading1("Experience"),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Container(height: 7,width: 90,color: Colors.amberAccent,),
-                        SizedBox(
-                          height: 30,
-                        ),
+
+                        Container(margin:EdgeInsets.only(top: 25),height: 7,width: 90,color: Colors.amberAccent,),
+
                         Heading2("14 Years Experience"),
-                        SizedBox(
-                          height: 10,
-                        ),
-                        Text("Description Paragraph"),
-                        SizedBox(
-                          height: 10,
-                        ),
+
+                        Container(margin:EdgeInsets.only(top: 25),child: Text("Description Paragraph")),
+
                         IconDescription(Icons.email, "Ace Adevertising", "Project Manager", "2013-2011","Description"),
                         IconDescription(Icons.message, "Ace Adevertising", "Project Manager", "2013-2011","Description"),
                         IconDescription(Icons.send, "Ace Adevertising", "Project Manager", "2013-2011","Description"),

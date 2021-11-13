@@ -5,6 +5,7 @@ import 'package:flutter_smart_home_ui/widgets/TextFields/widget_password_field.d
 import 'package:flutter_smart_home_ui/widgets/widget_button.dart';
 import 'package:kf_drawer/kf_drawer.dart';
 
+// ignore: must_be_immutable
 class Register extends KFDrawerContent {
   Register({
     Key key,
@@ -121,9 +122,11 @@ class _RegisterState extends State<Register> {
     );
   }
 
+  // ignore: non_constant_identifier_names
   void _SignUp() {
     if(_formKey.currentState.validate()){
       print("Success");
+      // ignore: deprecated_member_use
       Scaffold.of(context).showSnackBar(new SnackBar(
           content: new Text("SignUp success")));
     }

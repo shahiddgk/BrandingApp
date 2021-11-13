@@ -1,19 +1,26 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'Headings/widget_heading2.dart';
-
+// ignore: must_be_immutable
 class ProfessionalCoachingPictures extends StatefulWidget {
 
   String imageUrl;
+  // ignore: non_constant_identifier_names
   String Date;
+  // ignore: non_constant_identifier_names
   String Description;
   String title;
+  // ignore: non_constant_identifier_names
   String B1title;
+  // ignore: non_constant_identifier_names
   String B2title;
+  // ignore: non_constant_identifier_names
   String B3title;
+  // ignore: non_constant_identifier_names
   Function B1onPress;
+  // ignore: non_constant_identifier_names
   Function B2onPress;
+  // ignore: non_constant_identifier_names
   Function B3onPress;
 
   ProfessionalCoachingPictures(this.imageUrl,this.Date,this.title,this.B1title,this.B2title,this.B3title,this.B1onPress,this.B2onPress,this.B3onPress,this.Description);
@@ -58,14 +65,8 @@ class _ProfessionalCoachingPicturesState extends State<ProfessionalCoachingPictu
                       child: TextButton(onPressed: widget.B3onPress, child: Text(widget.B3title,style: TextStyle(fontSize:9,color: Colors.black),))),
                 ],),
               ),
-              SizedBox(
-                height: 10,
-              ),
-              Container(height: 7,width: 90,color: Colors.amberAccent,),
-              SizedBox(
-                height: 10,
-              ),
-              Text(widget.Description),
+              Container(margin:EdgeInsets.only(top: 25),height: 7,width: 90,color: Colors.amberAccent,),
+              Container(margin:EdgeInsets.only(top: 25),child: Text(widget.Description)),
             ],),
         ),
       ),

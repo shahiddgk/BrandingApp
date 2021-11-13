@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 
+// ignore: must_be_immutable
 class Heading2 extends StatefulWidget {
+  // ignore: non_constant_identifier_names
   String H2;
 
   Heading2(this.H2);
@@ -12,6 +14,6 @@ class Heading2 extends StatefulWidget {
 class _Heading2State extends State<Heading2> {
   @override
   Widget build(BuildContext context) {
-    return Text(widget.H2,style: TextStyle(fontSize: 24,fontWeight: FontWeight.normal));
+    return Container(margin:EdgeInsets.only(top: 25),child: Text(widget.H2,style: TextStyle(fontSize: 24,fontWeight: FontWeight.normal)));
   }
 }

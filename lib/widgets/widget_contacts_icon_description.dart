@@ -1,9 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class ContactsIconDescription extends StatefulWidget {
   IconData icon;
+  // ignore: non_constant_identifier_names
   String H2;
+  // ignore: non_constant_identifier_names
   String H1;
 
   ContactsIconDescription(this.icon,this.H1,this.H2);
@@ -23,14 +26,16 @@ class _ContactsIconDescriptionState extends State<ContactsIconDescription> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             Icon(widget.icon,size: 25,color: Colors.amber,),
-            SizedBox(width: 2,),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(widget.H1,style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold),),
-                Text(widget.H2,),
-              ],
+            Container(
+              margin: EdgeInsets.only(right: 15),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(widget.H1,style: TextStyle(fontSize: 10,fontWeight: FontWeight.bold),),
+                  Text(widget.H2,),
+                ],
+              ),
             ),
             SizedBox(width: MediaQuery.of(context).size.width*0.2,),
           ],
@@ -40,6 +45,7 @@ class _ContactsIconDescriptionState extends State<ContactsIconDescription> {
   }
 }
 
+// ignore: must_be_immutable
 class ContactsDescription extends StatefulWidget {
   String description;
    ContactsDescription(this.description);

@@ -4,6 +4,7 @@ import 'package:flutter_smart_home_ui/widgets/TextFields/widget_password_field.d
 import 'package:flutter_smart_home_ui/widgets/widget_button.dart';
 import 'package:kf_drawer/kf_drawer.dart';
 
+// ignore: must_be_immutable
 class LogIn extends KFDrawerContent {
   LogIn({
     Key key,
@@ -99,33 +100,6 @@ class _LogInState extends State<LogIn> {
                                   ),
                                 ),
                               ),
-                              // Padding(
-                              //   padding: EdgeInsets.only(top: 30),
-                              //   child: Center(
-                              //     child: RichText(
-                              //       text: TextSpan(
-                              //           children: [
-                              //             TextSpan(
-                              //                 text: "Don't have an account?",
-                              //                 style: TextStyle(
-                              //                   fontFamily: 'SFUIDisplay',
-                              //                   color: Colors.black,
-                              //                   fontSize: 15,
-                              //                 )
-                              //             ),
-                              //             TextSpan(
-                              //                 text: "sign up",
-                              //                 style: TextStyle(
-                              //                   fontFamily: 'SFUIDisplay',
-                              //                   color: Color(0xffff2d55),
-                              //                   fontSize: 15,
-                              //                 )
-                              //             )
-                              //           ]
-                              //       ),
-                              //     ),
-                              //   ),
-                              // )
                             ],
                           ),
                         ),
@@ -141,9 +115,11 @@ class _LogInState extends State<LogIn> {
     );
   }
 
+  // ignore: non_constant_identifier_names
   void _SignIn() {
     if(_formKey.currentState.validate()) {
       print("Success");
+      // ignore: deprecated_member_use
       Scaffold.of(context).showSnackBar(new SnackBar(
           content: new Text("Login success")));
     }

@@ -1,17 +1,18 @@
-import 'package:flutter_smart_home_ui/Career/careers.dart';
-import 'package:flutter_smart_home_ui/Contact/contacts.dart';
-import 'package:flutter_smart_home_ui/Entrepreneur/entrepreneur.dart';
-import 'package:flutter_smart_home_ui/Authentication/login.dart';
-import 'package:flutter_smart_home_ui/Partnership/partnership.dart';
-import 'package:flutter_smart_home_ui/Professional_Coaching/professional_coaching.dart';
-import 'package:flutter_smart_home_ui/About/about.dart';
-import 'package:flutter_smart_home_ui/Home/home.dart';
-import 'package:flutter_smart_home_ui/Authentication/register.dart';
-import 'package:flutter_smart_home_ui/Future_Goals/future_goals.dart';
-import 'package:flutter_smart_home_ui/Experience/experience.dart';
-import 'package:flutter_smart_home_ui/Biography/biography.dart';
-import 'package:flutter_smart_home_ui/Achievement/achievement.dart';
-import 'package:flutter_smart_home_ui/Testimonial/testimonials.dart';
+
+import 'package:flutter_smart_home_ui/Pages/About/about.dart';
+import 'package:flutter_smart_home_ui/Pages/Achievement/achievement.dart';
+import 'package:flutter_smart_home_ui/Pages/Authentication/login.dart';
+import 'package:flutter_smart_home_ui/Pages/Authentication/register.dart';
+import 'package:flutter_smart_home_ui/Pages/Biography/biography.dart';
+import 'package:flutter_smart_home_ui/Pages/Career/careers.dart';
+import 'package:flutter_smart_home_ui/Pages/Contact/contacts.dart';
+import 'package:flutter_smart_home_ui/Pages/Entrepreneur/entrepreneur.dart';
+import 'package:flutter_smart_home_ui/Pages/Experience/experience.dart';
+import 'package:flutter_smart_home_ui/Pages/Future_Goals/future_goals.dart';
+import 'package:flutter_smart_home_ui/Pages/Home/home.dart';
+import 'package:flutter_smart_home_ui/Pages/Partnership/partnership.dart';
+import 'package:flutter_smart_home_ui/Pages/Professional_Coaching/professional_coaching.dart';
+import 'package:flutter_smart_home_ui/Pages/Testimonial/testimonials.dart';
 
 typedef T Constructor<T>();
 

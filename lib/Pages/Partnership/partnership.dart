@@ -8,16 +8,16 @@ import 'package:flutter_smart_home_ui/widgets/widget_button.dart';
 import 'package:kf_drawer/kf_drawer.dart';
 
 // ignore: must_be_immutable
-class Career extends KFDrawerContent {
-  Career({
+class Partnership extends KFDrawerContent {
+  Partnership({
     Key key,
   });
 
   @override
-  _CareerState createState() => _CareerState();
+  _PartnershipState createState() => _PartnershipState();
 }
 
-class _CareerState extends State<Career> {
+class _PartnershipState extends State<Partnership> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -55,36 +55,22 @@ class _CareerState extends State<Career> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: <Widget>[
-                            Heading1("Career"),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Container(height: 7,width: 90,color: Colors.amberAccent,),
-                            SizedBox(
-                              height: 30,
-                            ),
+                            Heading1("Partnership"),
+
+                            Container(margin: EdgeInsets.only(top: 25),height: 7,width: 90,color: Colors.amberAccent,),
+
                             Heading2("Let keep in Touch"),
                             Text("Description"),
-                            SizedBox(
-                              height: 10,
-                            ),
+
                             Heading2("Drop Me A Line"),
-                            SizedBox(
-                              height: 20,
-                            ),
-                            NameField(hint: "Your Name",),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            EmailField(hint: "Your Email",),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            MessageField(hint: "Enter Message",),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Button(title: "Say Hello",onPressed: (){},),
+
+                            Container(margin: EdgeInsets.only(top: 25),child: NameField(hint: "Your Name",)),
+
+                            Container(margin: EdgeInsets.only(top: 20),child: EmailField(hint: "Your Email",)),
+
+                            Container(margin: EdgeInsets.only(top: 20),child: MessageField(hint: "Enter Message",)),
+
+                            Container(margin: EdgeInsets.only(top: 20),child: Button(title: "Say Hello",onPressed: (){},)),
                           ],
                         ),),)
                   ],

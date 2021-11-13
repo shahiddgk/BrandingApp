@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_smart_home_ui/Achievement/achievement.dart';
 import 'package:flutter_smart_home_ui/widgets/Headings/widget_heading1.dart';
 import 'package:flutter_smart_home_ui/widgets/Headings/widget_heading2.dart';
 

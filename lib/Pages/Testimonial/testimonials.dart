@@ -1,23 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_smart_home_ui/widgets/Headings/widget_heading1.dart';
 import 'package:flutter_smart_home_ui/widgets/Headings/widget_heading2.dart';
+import 'package:flutter_smart_home_ui/widgets/widget_icon_with_description.dart';
 import 'package:kf_drawer/kf_drawer.dart';
 
-import 'achievement_picture_details.dart';
-
-class Achievement extends KFDrawerContent {
-  Achievement({
+// ignore: must_be_immutable
+class Testimonials extends KFDrawerContent {
+  Testimonials({
     Key key,
   });
 
   @override
-  _AchievementState createState() => _AchievementState();
+  _TestimonialsState createState() => _TestimonialsState();
 }
 
-class _AchievementState extends State<Achievement> {
-
-  List images = ["https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",];
-
+class _TestimonialsState extends State<Testimonials> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -55,37 +52,23 @@ class _AchievementState extends State<Achievement> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: <Widget>[
-                          Heading1("Achievement"),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Container(height: 7,width: 90,color: Colors.amberAccent,),
-                          SizedBox(
-                            height: 30,
-                          ),
-                          Heading2("Our Portfolio"),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Text("Description Paragraph"),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          ListView.builder(itemCount: images.length,
-                            shrinkWrap: true,
-                            scrollDirection: Axis.vertical,
-                            itemBuilder: (context, index) {
-                              return GestureDetector(
-                                onTap: () {
-                                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>AchievementPictureDetails()));
-                                },
-                                child: Container(
-                                  width: MediaQuery.of(context).size.width,
-                                  child: Image.network(images[index]),
-                                ),
-                              );
-                            },)
+                          Heading1("Testimonial"),
 
+                          Container(margin:EdgeInsets.only(top: 25),height: 7,width: 90,color: Colors.amberAccent,),
+
+                          Heading2("Just my education"),
+
+                          Container(margin:EdgeInsets.only(top: 25),child: Text("Description Paragraph")),
+
+                          IconDescription(Icons.email, "Ace Adevertising", "Project Manager", "2013-2011","Description"),
+                          IconDescription(Icons.message, "Ace Adevertising", "Project Manager", "2013-2011","Description"),
+                          IconDescription(Icons.send, "Ace Adevertising", "Project Manager", "2013-2011","Description"),
+                          IconDescription(Icons.print, "Ace Adevertising", "Project Manager", "2013-2011","Description"),
+                          IconDescription(Icons.search, "Ace Adevertising", "Project Manager", "2013-2011","Description"),
+                          IconDescription(Icons.title, "Ace Adevertising", "Project Manager", "2013-2011","Description"),
+                          IconDescription(Icons.access_alarm, "Ace Adevertising", "Project Manager", "2013-2011","Description"),
+                          IconDescription(Icons.accessibility_new, "Ace Adevertising", "Project Manager", "2013-2011","Description"),
+                          IconDescription(Icons.accessible_sharp, "Ace Adevertising", "Project Manager", "2013-2011","Description"),
                         ],
                       ),
                     ),

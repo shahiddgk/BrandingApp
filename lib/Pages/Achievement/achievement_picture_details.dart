@@ -1,17 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_smart_home_ui/Achievement/achievement.dart';
 import 'package:flutter_smart_home_ui/widgets/Headings/widget_heading1.dart';
 import 'package:flutter_smart_home_ui/widgets/Headings/widget_heading2.dart';
 
-class PictureDetails extends StatefulWidget {
-  const PictureDetails({Key key}) : super(key: key);
+class AchievementPictureDetails extends StatefulWidget {
+  const AchievementPictureDetails({Key key}) : super(key: key);
 
   @override
-  _PictureDetailsState createState() => _PictureDetailsState();
+  _AchievementPictureDetailsState createState() => _AchievementPictureDetailsState();
 }
 
-class _PictureDetailsState extends State<PictureDetails> {
+class _AchievementPictureDetailsState extends State<AchievementPictureDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,7 +34,7 @@ class _PictureDetailsState extends State<PictureDetails> {
             Text("Description"),
             SizedBox(height: 20,),
             Container(
-              height: MediaQuery.of(context).size.height/2,
+                height: MediaQuery.of(context).size.height/2,
                 width: MediaQuery.of(context).size.width,
                 child: Image.network("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")),
           ],),) ,),

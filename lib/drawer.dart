@@ -1,22 +1,21 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_smart_home_ui/Partnership/partnership.dart';
-import 'package:flutter_smart_home_ui/Professional_Coaching/professional_coaching.dart';
-import 'package:flutter_smart_home_ui/About/about.dart';
-import 'package:flutter_smart_home_ui/Authentication/register.dart';
-import 'package:flutter_smart_home_ui/Future_Goals/future_goals.dart';
-import 'package:flutter_smart_home_ui/Experience/experience.dart';
-import 'package:flutter_smart_home_ui/Achievement/achievement.dart';
-import 'package:flutter_smart_home_ui/Testimonial/testimonials.dart';
+import 'package:flutter_smart_home_ui/Pages/Biography/biography.dart';
 import 'package:kf_drawer/kf_drawer.dart';
-
-import 'Career/careers.dart';
+import 'Pages/About/about.dart';
+import 'Pages/Achievement/achievement.dart';
+import 'Pages/Authentication/login.dart';
+import 'Pages/Authentication/register.dart';
+import 'Pages/Career/careers.dart';
+import 'Pages/Contact/contacts.dart';
+import 'Pages/Entrepreneur/entrepreneur.dart';
+import 'Pages/Experience/experience.dart';
+import 'Pages/Future_Goals/future_goals.dart';
+import 'Pages/Home/home.dart';
+import 'Pages/Partnership/partnership.dart';
+import 'Pages/Professional_Coaching/professional_coaching.dart';
+import 'Pages/Testimonial/testimonials.dart';
 import 'utills/class_builder.dart';
-import 'Contact/contacts.dart';
-import 'Entrepreneur/entrepreneur.dart';
-import 'Home/home.dart';
-import 'Authentication/login.dart';
-import 'Biography/biography.dart';
 
 class MainWidget extends StatefulWidget {
   MainWidget({Key key, this.title}) : super(key: key);

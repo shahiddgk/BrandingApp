@@ -4,6 +4,7 @@ import 'package:flutter_smart_home_ui/widgets/Headings/widget_heading2.dart';
 import 'package:flutter_smart_home_ui/widgets/widget_button.dart';
 import 'package:kf_drawer/kf_drawer.dart';
 
+// ignore: must_be_immutable
 class About extends KFDrawerContent {
   @override
   _AboutState createState() => _AboutState();
@@ -46,31 +47,20 @@ class _AboutState extends State<About> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: <Widget>[
                           Heading1("About"),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Container(height: 7,width: 90,color: Colors.amberAccent,),
-                          SizedBox(
-                            height: 30,
-                          ),
-                          Text("• Name: Kaleem Ullah Khan",style: TextStyle(color: Colors.grey),),
+                          Container(margin:EdgeInsets.only(top: 25),height: 7,width: 90,color: Colors.amberAccent,),
+                          
+                          Container(margin:EdgeInsets.only(top: 25),child: Text("• Name: Kaleem Ullah Khan",style: TextStyle(color: Colors.grey),)),
                           Text("• Email: ABCD@gmail.com",style: TextStyle(color: Colors.grey),),
                           Text("• Phone: 12345678901",style: TextStyle(color: Colors.grey),),
                           Text("• Date of Birth: 23 February 1990",style: TextStyle(color: Colors.grey),),
                           Text("• Address : Pakistan Peshawer",style: TextStyle(color: Colors.grey),),
                           Text("• Nationality: Pakistan",style: TextStyle(color: Colors.grey),),
 
-                          SizedBox(height: 40,),
-
                           Heading2("Professional Profile"),
-                          SizedBox(
-                            height: 30,
-                          ),
-                          Text("Flutter Developer",style: TextStyle(color: Colors.grey)),
-                          SizedBox(
-                            height: 30,
-                          ),
+                          Container(margin:EdgeInsets.only(top: 25),child: Text("Flutter Developer",style: TextStyle(color: Colors.grey))),
+
                           Container(
+                              margin:EdgeInsets.only(top: 25),
                             width: 400,
                             decoration: BoxDecoration(border: Border.all(color: Colors.yellow,width: 3)),
                             child: Button(title: "Download Resume as PDF",)

@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 
+// ignore: must_be_immutable
 class Heading1 extends StatefulWidget {
+  // ignore: non_constant_identifier_names
   String H1;
 
   Heading1(this.H1);
