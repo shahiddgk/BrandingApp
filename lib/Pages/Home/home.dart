@@ -59,22 +59,26 @@ class _HomeState extends State<Home> {
                 ],
               ),
 
-              CarouselSlider.builder(
-                itemCount: urlImages.length,
-                itemBuilder: (context, index, realIndex){
-                  final  urlImage = urlImages[index];
-                  return buildImage(urlImage,index);
-                },
-                options: CarouselOptions(
-                  height: MediaQuery.of(context).size.height-160,
-                  autoPlay: true,
-                  viewportFraction: 1,
-                  autoPlayInterval: Duration(seconds: 4),
-                  onPageChanged: (index, reason) => setState(()=>activeIndex = index),
-                ),
-              ),
-              Container(margin:EdgeInsets.only(top: 25),child: buildIndicator()),
+              // Container(
+              //   height:  MediaQuery.of(context).size.height-160,
+              //   child: CarouselSlider.builder(
+              //     itemCount: urlImages.length,
+              //     itemBuilder: (context, index, realIndex){
+              //       final  urlImage = urlImages[index];
+              //       return buildImage(urlImage,index);
+              //     },
+              //     options: CarouselOptions(
+              //       height: MediaQuery.of(context).size.height-160,
+              //       autoPlay: true,
+              //       viewportFraction: 1,
+              //       autoPlayInterval: Duration(seconds: 4),
+              //       onPageChanged: (index, reason) => setState(()=>activeIndex = index),
+              //     ),
+              //   ),
+              // ),
+              // Container(margin:EdgeInsets.only(top: 25),child: buildIndicator()),
 
+              Center(child: Text("Home"),),
               // Padding(
               //   padding: EdgeInsets.all(15),
               //   child: Column(
